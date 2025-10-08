@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ naslov }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            color: #333;
+            margin: 40px;
+        }
+        h2 {
+            background: #0077cc;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            max-width: 600px;
+        }
+        .vsebina {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            max-width: 600px;
+            line-height: 1.5;
+        }
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 15px;
+            background-color: #0077cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Oseba {{ osebe }} je stara {{ starost }} in živi v {{ kraji }}</h2>
+    <div class="vsebina">{{ vsebina }}</div>
+    <a href="/randomOsebe">Generiraj random osebo</a>
+</body>
+</html>
